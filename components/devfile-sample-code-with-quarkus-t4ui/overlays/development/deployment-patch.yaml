@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-t4ui
+  namespace: mreid-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/mreid-tenant/my-app-1/devfile-sample-code-with-quarkus-t4ui@sha256:ff2e2f7309a163f2885df536e020890f0651914cfcfa5dd1c7aa541d4a0c2521
+        name: my-java-quarkus
+        resources: {}
+status: {}
